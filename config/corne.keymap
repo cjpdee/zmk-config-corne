@@ -9,6 +9,63 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+        macros {
+            alt_f13: alt_f13 {
+                label = "alt_f13";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp LALT>
+                    , <&macro_press &kp F13>
+                    , <&macro_release &kp LALT>;
+            };
+            alt_f14: alt_f14 {
+                label = "alt_f14";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp LALT>
+                    , <&macro_press &kp F14>
+                    , <&macro_release &kp LALT>;
+            };
+            alt_f15: alt_f15 {
+                label = "alt_f15";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp LALT>
+                    , <&macro_press &kp F15>
+                    , <&macro_release &kp LALT>;
+            };
+            alt_f16: alt_f16 {
+                label = "alt_f16";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp LALT>
+                    , <&macro_press &kp F16>
+                    , <&macro_release &kp LALT>;
+            };
+            alt_f17: alt_f17 {
+                label = "alt_f17";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp LALT>
+                    , <&macro_press &kp F17>
+                    , <&macro_release &kp LALT>;
+            };
+            alt_f18: alt_f18 {
+                label = "alt_f18";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp LALT>
+                    , <&macro_press &kp F18>
+                    , <&macro_release &kp LALT>;
+            };
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -63,8 +120,8 @@
                         bindings = <
    &trans &mwh SCROLL_UP  &mkp RCLK &mmv MOVE_UP &mkp LCLK &kp C_VOL_UP    &trans &trans  &trans &trans &trans &kp C_POWER
    &trans &mkp MCLK   &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT  &kp C_PP  &kp F13 &kp F14 &kp F15 &kp F16 &kp F17 &kp F18 
-   &trans &mwh SCROLL_DOWN   &trans &trans   &trans   &kp C_VOL_DN      &trans &trans  &trans        &trans  &trans &trans
-                             &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+   &trans &mwh SCROLL_DOWN   &trans &trans   &trans   &kp C_VOL_DN      &alt_f13 &alt_f14  &alt_f15        &alt_f16  &alt_f17 &alt_f18
+                             &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp K_CMENU
                         >;
                 };
         };
