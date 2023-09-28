@@ -265,7 +265,7 @@
 // | SHFT |     |     |  \  |  |  |     |   |  _  |  -  |  +  |     |     |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &tog 4  &mwh SCROLL_UP  &mkp RCLK &mmv MOVE_UP &mkp LCLK &kp C_VOL_UP    &ctl_alt_f13 &ctl_alt_f14  &ctl_alt_f15 &ctl_alt_f16 &ctl_alt_f17 &C_POWER
+   &tog 4  &mwh SCROLL_UP  &mkp RCLK &mmv MOVE_UP &mkp LCLK &kp C_VOL_UP    &ctl_alt_f13 &ctl_alt_f14  &ctl_alt_f15 &ctl_alt_f16 &ctl_alt_f17 &kp C_POWER
    &kp PRINTSCREEN &mkp MCLK   &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT  &kp C_PP  &kp F13 &kp F14 &kp F15 &kp F16 &kp F17 &kp F18 
    &trans &mwh SCROLL_DOWN   &trans &trans   &trans   &kp C_VOL_DN      &alt_f13 &alt_f14  &alt_f15        &alt_f16  &alt_f17 &alt_f18
                              &kp LALT &trans   &kp SPACE   &kp RET   &trans    &kp K_CMENU
