@@ -43,7 +43,7 @@
                     , <&macro_press &kp LSHFT>
                     , <&macro_press &kp TAB>
                     , <&macro_release &kp TAB>
-                    , <&macro_press &kp LSHFT>
+                    , <&macro_release &kp LSHFT>
                     , <&macro_release &kp LCTRL>;
             };
             alt_f13: alt_f13 {
