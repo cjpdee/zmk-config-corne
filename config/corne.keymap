@@ -10,6 +10,26 @@
 
 / {
         macros {
+            alt_tab: alt_tab {
+                label = "alt_tab";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp LALT>
+                    , <&macro_press &kp TAB>
+                    , <&macro_release &kp LALT>;
+            }
+            shft_alt_tab: shft_alt_tab {
+                label = "shft_alt_tab";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp LALT>
+                    , <&macro_press &kp LSHFT>
+                    , <&macro_press &kp TAB>
+                    , <&macro_press &kp LSHFT>
+                    , <&macro_release &kp LALT>;
+            }
             alt_f13: alt_f13 {
                 label = "alt_f13";
                 compatible = "zmk,behavior-macro";
