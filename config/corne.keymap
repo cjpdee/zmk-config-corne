@@ -119,6 +119,98 @@
                     , <&macro_release &kp LALT>
                     , <&macro_release &kp LCTRL>;
             };
+
+            // gaming stuff
+            ctl_1: ctl_1 {
+                label = "ctl_1";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp LCTRL>
+                    , <&macro_press &kp 1>
+                    , <&macro_release &kp LCTRL>;
+            };
+            ctl_2: ctl_2 {
+                label = "ctl_2";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp LCTRL>
+                    , <&macro_press &kp 2>
+                    , <&macro_release &kp LCTRL>;
+            };
+            ctl_3: ctl_3 {
+                label = "ctl_3";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp LCTRL>
+                    , <&macro_press &kp 3>
+                    , <&macro_release &kp LCTRL>;
+            };
+            ctl_4: ctl_4 {
+                label = "ctl_4";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp LCTRL>
+                    , <&macro_press &kp 4>
+                    , <&macro_release &kp LCTRL>;
+            };
+            ctl_5: ctl_5 {
+                label = "ctl_5";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp LCTRL>
+                    , <&macro_press &kp 5>
+                    , <&macro_release &kp LCTRL>;
+            };
+            shft_1: shft_1 {
+                label = "shft_1";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp LSHFT>
+                    , <&macro_press &kp 1>
+                    , <&macro_release &kp LSHFT>;
+            };
+            shft_2: shft_2 {
+                label = "shft_2";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp LSHFT>
+                    , <&macro_press &kp 2>
+                    , <&macro_release &kp LSHFT>;
+            };
+            shft_3: shft_3 {
+                label = "shft_3";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp LSHFT>
+                    , <&macro_press &kp 3>
+                    , <&macro_release &kp LSHFT>;
+            };
+            shft_4: shft_4 {
+                label = "shft_4";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp LSHFT>
+                    , <&macro_press &kp 4>
+                    , <&macro_release &kp LSHFT>;
+            };
+            shft_5: shft_5 {
+                label = "shft_5";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp LSHFT>
+                    , <&macro_press &kp 5>
+                    , <&macro_release &kp LSHFT>;
+            };
         };
 
         keymap {
@@ -173,11 +265,38 @@
 // | SHFT |     |     |  \  |  |  |     |   |  _  |  -  |  +  |     |     |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp PRINTSCREEN &mwh SCROLL_UP  &mkp RCLK &mmv MOVE_UP &mkp LCLK &kp C_VOL_UP    &ctl_alt_f13 &ctl_alt_f14  &ctl_alt_f15 &ctl_alt_f16 &ctl_alt_f17 &kp C_POWER
-   &trans &mkp MCLK   &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT  &kp C_PP  &kp F13 &kp F14 &kp F15 &kp F16 &kp F17 &kp F18 
+   &tog 4  &mwh SCROLL_UP  &mkp RCLK &mmv MOVE_UP &mkp LCLK &kp C_VOL_UP    &ctl_alt_f13 &ctl_alt_f14  &ctl_alt_f15 &ctl_alt_f16 &ctl_alt_f17 &ext_power EP_TOG
+   &kp PRINTSCREEN &mkp MCLK   &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT  &kp C_PP  &kp F13 &kp F14 &kp F15 &kp F16 &kp F17 &kp F18 
    &trans &mwh SCROLL_DOWN   &trans &trans   &trans   &kp C_VOL_DN      &alt_f13 &alt_f14  &alt_f15        &alt_f16  &alt_f17 &alt_f18
                              &kp LALT &trans   &kp SPACE   &kp RET   &trans    &kp K_CMENU
                         >;
                 };
+
+                gaming_layer {
+                    bindings = <
+&kp TAB &none &kp Q &kp W &kp E &kp R    &none &mkp LCLK &kp UP &mkp RCLK &none &none
+&kp LCTRL &kp LSHFT &kp A &kp S &kp D &kp F    &none &kp LEFT &kp DOWN &kp RIGHT &none &none
+&none &none &kp Z &kp X &kp C &kp V      &none &none &none &none &none &none
+                &kp LALT &mo 6 &kp SPACE    &kp RET &tog 5 &kp LALT
+                    >;
+                };
+                gaming_layer_mouse {
+                    bindings = <
+&kp TAB &none &kp Q &kp W &kp E &kp R    &none &mkp LCLK &mmv MOVE_UP &mkp RCLK &none &none
+&kp LCTRL &kp LSHFT &kp A &kp S &kp D &kp F    &none &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none &none
+&none &none &kp Z &kp X &kp C &kp V      &none &none &none &none &none &none
+                &kp LALT &mo 6 &kp SPACE    &kp RET &tog 5 &kp LALT
+                    >;
+                };
+
+                gaming_layer_hotkeys {
+                    bindings = <
+&kp TAB &kp 1 &kp 2 &kp 3 &kp 4 &kp 5    &none &mkp LCLK &mmv MOVE_UP &mkp RCLK &none &none
+&kp LCTRL &shft_1 &shft_2 &shft_3 &shft_4 &shft_5    &none &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none &none
+&none &ctl_1 &ctl_2 &ctl_3 &ctl_4 &ctl_5      &none &none &none &none &none &none
+                &kp LALT &trans &kp SPACE    &kp RET &tog 5 &kp LALT
+                    >;
+                };
         };
+
 };
