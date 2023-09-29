@@ -314,7 +314,7 @@
 &kp TAB &none &kp Q &kp W &kp E &kp R    &none &mkp LCLK &kp UP &mkp RCLK &none &none
 &kp LCTRL &kp LSHFT &kp A &kp S &kp D &kp F    &none &kp LEFT &kp DOWN &kp RIGHT &none &none
 &none &none &kp Z &kp X &kp C &kp V      &none &none &none &none &none &none
-                &kp LALT &mo 6 &kp SPACE    &kp RET &tog 5 &tog 0 
+                &kp LALT &mo 6 &kp SPACE    &kp RET &tog 5 &to 0 
                     >;
                 };
                 gaming_layer_mouse {
@@ -322,7 +322,7 @@
 &kp TAB &none &kp Q &kp W &kp E &kp R    &none &mkp LCLK &mmv MOVE_UP &mkp RCLK &none &none
 &kp LCTRL &kp LSHFT &kp A &kp S &kp D &kp F    &none &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none &none
 &none &none &kp Z &kp X &kp C &kp V      &none &none &none &none &none &none
-                &kp LALT &mo 6 &kp SPACE    &kp RET &tog 5 &kp LALT
+                &kp LALT &mo 6 &kp SPACE    &kp RET &tog 5 &to 0
                     >;
                 };
 
@@ -331,7 +331,7 @@
 &kp TAB &kp N1 &kp N2 &kp N3 &kp N4 &kp N5    &none &mkp LCLK &mmv MOVE_UP &mkp RCLK &none &none
 &kp LCTRL &shft_1 &shft_2 &shft_3 &shft_4 &shft_5    &none &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none &none
 &none &ctl_1 &ctl_2 &ctl_3 &ctl_4 &ctl_5      &none &none &none &none &none &none
-                &kp LALT &trans &kp SPACE    &kp RET &tog 5 &kp LALT
+                &kp LALT &trans &kp SPACE    &kp RET &tog 5 &to 0
                     >;
                 };
         };
